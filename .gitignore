@@ -21,8 +21,13 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
+<<<<<<< HEAD
 jungol_practice.iml
 .idea
+=======
+/.idea/
+java_basic.iml
+>>>>>>> 24237545abd79340442318f57f6f9c3f4161677a
 
 ### VS Code ###
 .vscode/
