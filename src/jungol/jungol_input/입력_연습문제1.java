@@ -6,6 +6,6 @@ public class 입력_연습문제1 {
         int b = 65;
 
         System.out.printf("a = %d\n", a);
-        System.out.printf("b = %c\n", b);
+        System.out.printf("b = %c", b);
     }
 }
