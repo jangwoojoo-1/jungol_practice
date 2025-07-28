@@ -15,12 +15,21 @@ public class 반복제어문2_형성평가10 {
             num2 = sc.nextInt();
         }
 
-
-        for (int i = 1 ; i <= 9 ; i++){
-            for (int j = num1 ; j >= num2 ; j--){
-                System.out.printf("%d * %d = %2d   ", j, i, j*i);
+        if(num1 >= num2){
+            for (int i = 1 ; i <= 9 ; i++){
+                for (int j = num1 ; j >= num2 ; j--){
+                    System.out.printf("%d * %d = %2d   ", j, i, j*i);
+                }
+                System.out.println();
             }
-            System.out.println();
+        } else{
+            for (int i = 1 ; i <= 9 ; i++){
+                for (int j = num1 ; j <= num2 ; j++){
+                    System.out.printf("%d * %d = %2d   ", j, i, j*i);
+                }
+                System.out.println();
+            }
         }
+
     }
 }

@@ -6,7 +6,7 @@ public class 반복제어문2_형성평가4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        while(n>100){
+        while(n>=100){
             System.out.println("100이하의 자연수를 입력하세요. ");
             n = sc.nextInt();
         }
