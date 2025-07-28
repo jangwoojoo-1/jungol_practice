@@ -8,7 +8,7 @@ public class 연산자_연습문제4 {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int c = ++a + b--;
+        int c = (++a) + (b--);
 
         System.out.printf("a = %d, b = %d, c = %d", a, b, c);
     }

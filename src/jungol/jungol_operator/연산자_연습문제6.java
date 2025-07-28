@@ -10,16 +10,12 @@ public class 연산자_연습문제6 {
         int c = sc.nextInt();
 
         if (a > b){
-            System.out.print("1");
+            System.out.print(1);
         } else {
-            System.out.print("0");
+            System.out.print(0);
         }
 
-        if (b >= c){
-            System.out.print(" 1");
-        } else {
-            System.out.print(" 0");
-        }
+        System.out.print((b>=c)? " " + 1 : " " + 0);
 
         if (a <= b){
             System.out.print(" 1");
@@ -27,10 +23,6 @@ public class 연산자_연습문제6 {
             System.out.print(" 0");
         }
 
-        if (b < c){
-            System.out.print(" 1");
-        } else {
-            System.out.print(" 0");
-        }
+        System.out.print((b<c)? " " + 1 : " " + 0);
     }
 }

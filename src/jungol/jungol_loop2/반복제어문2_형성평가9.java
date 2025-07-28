@@ -7,13 +7,8 @@ public class 반복제어문2_형성평가9 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-<<<<<<< HEAD
-        for (int i = 1 ; i <= num ; i++){
-            for (int j = 1 ; j <= num ; j++){
-=======
         for(int i = 1 ; i <= num ; i++){
             for(int j = 1 ; j <= num ; j++){
->>>>>>> 01ff5d311cf8f1b4ab95cbddca5b35ebc32d98af
                 System.out.printf("(%d, %d) ", i, j);
             }
             System.out.println();

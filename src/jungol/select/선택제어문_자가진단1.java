@@ -1,14 +1,15 @@
-package jungol.jungol_loop2;
+package jungol.select;
 
 import java.util.Scanner;
 
-public class 반복제어문2_형성평가7 {
+public class 선택제어문_자가진단1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        for(int i = 1 ; i <= 10 ; i++){
-            System.out.printf("%d ", num*i);
+        System.out.println(num);
+        if(num < 0){
+            System.out.println("minus");
         }
     }
 }

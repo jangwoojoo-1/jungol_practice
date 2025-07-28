@@ -7,7 +7,9 @@ public class 연산자_연습문제8 {
         b = 1;
         c = 2;
 
-        System.out.printf("%b %b %b %b",
-                a!=0||b!=0, a!=0 ^ b!=0, a!=0 && b != 0, !(a!=0));
+        System.out.print((a==1||b==1)? 1 + " " : 0 + " ");
+        System.out.print((a==1&&c==1)? 1 + " " : 0 + " ");
+        System.out.print((b==1||c==1)? 1 + " " : 0 + " ");
+        System.out.print((a==1^b==1)? 1 + " " : 0 + " ");
     }
 }

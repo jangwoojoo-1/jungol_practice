@@ -9,15 +9,11 @@ public class 연산자_자가진단5 {
         int num2 = sc.nextInt();
 
         if (num1 == num2){
-            System.out.println("1");
+            System.out.println(1);
         } else {
-            System.out.println("0");
+            System.out.println(0);
         }
 
-        if (num1 != num2){
-            System.out.println("1");
-        } else {
-            System.out.println("0");
-        }
+        System.out.println((num1!=num2)? 1 : 0);
     }
 }

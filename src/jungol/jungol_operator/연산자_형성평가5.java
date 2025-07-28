@@ -10,7 +10,7 @@ public class 연산자_형성평가5 {
         int kiyung_height = sc.nextInt();
         int kiyung_weight = sc.nextInt();
 
-        System.out.printf("%s", (minsu_height > kiyung_height && minsu_weight > kiyung_weight)?"true":"false");
+        System.out.printf("%b", minsu_height > kiyung_height && minsu_weight > kiyung_weight);
 
     }
 }
