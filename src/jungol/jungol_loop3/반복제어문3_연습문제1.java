@@ -21,6 +21,7 @@ public class 반복제어문3_연습문제1 {
             }
 
             System.out.printf("%d %d", last_num, sum);
+
         } catch (InputMismatchException e){
             System.out.println("숫자만 입력하세요.");
         }
