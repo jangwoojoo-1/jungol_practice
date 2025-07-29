@@ -19,6 +19,7 @@ public class 반복제어문3_형성평가1 {
                     break;
                 }
             }
+
             System.out.printf("%d %d", sum, sum/count);
 
         } catch (InputMismatchException e){

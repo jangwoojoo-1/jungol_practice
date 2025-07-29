@@ -8,16 +8,23 @@ public class 반복제어문3_자가진단1 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int sum = 0;
+        int num = 1;
         int odd_num = 0;
 
         try{
-            for(int i = 1 ; i <= n ; i= i+2){
+            /*for(int i = 1 ; i <= n ; i= i+2){
                 if(n > sum){
                     sum += i;
                     odd_num++;
                 } else {
                     break;
                 }
+            }*/
+
+            while(sum < n){
+                sum += num;
+                odd_num++;
+                num += 2;
             }
 
             System.out.printf("%d %d", odd_num, sum);

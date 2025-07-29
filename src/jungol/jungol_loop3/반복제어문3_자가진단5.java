@@ -1,12 +1,17 @@
 package jungol.jungol_loop3;
 
+import java.util.Scanner;
+
 public class 반복제어문3_자가진단5 {
     public static void main(String[] args) {
-        for(int i = 5 ; i >= 1 ; i = i - 2){
-            for(int z = (int)(9-i)/2 ; z >= 1 ; z--){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i = n ; i >= 1 ; i--){
+            for(int z = i ; z < n ; z++){
                 System.out.print(" ");
             }
-            for(int j = 1 ; j <= i ; j++){
+            for(int j = 1 ; j <= i*2-1 ; j++){
                 System.out.print("*");
             }
             System.out.println();

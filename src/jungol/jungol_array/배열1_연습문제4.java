@@ -2,7 +2,7 @@ package jungol.jungol_array;
 
 import java.util.Scanner;
 
-public class 배열_연습문제4 {
+public class 배열1_연습문제4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] num_array = new int[100];

@@ -8,16 +8,26 @@ public class 반복제어문3_연습문제1 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int sum = 0;
-        int last_num = 0;
+        int last_num = 1;
 
         try{
-            for(int i = 1 ; i <= num ; i++){
+            /*for(int i = 1 ; i <= num ; i++){
                 if(num >= sum){
                     sum += i;
                     last_num = i;
                 } else {
                     break;
                 }
+            }
+
+            System.out.printf("%d %d", last_num, sum);*/
+
+            while(last_num <= num){
+                sum += last_num;
+                if (sum > num){
+                    break;
+                }
+                last_num++;
             }
 
             System.out.printf("%d %d", last_num, sum);

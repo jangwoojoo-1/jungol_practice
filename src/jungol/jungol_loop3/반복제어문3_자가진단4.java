@@ -1,8 +1,13 @@
 package jungol.jungol_loop3;
 
+import java.util.Scanner;
+
 public class 반복제어문3_자가진단4 {
     public static void main(String[] args) {
-        for(int i = 3 ; i >= 1 ; i--){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i = n ; i >= 1 ; i--){
             for(int z = 1 ; z <= 3-i;z++){
                 System.out.print(" ");
             }
