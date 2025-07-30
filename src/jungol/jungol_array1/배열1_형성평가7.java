@@ -11,7 +11,7 @@ public class 배열1_형성평가7 {
 
         for (int i = 0 ; i < num_array.length ; i++){
             int n = sc.nextInt();
-            while(n > 1000 || n <-1000){
+            while(n >= 1000 || n <= -1000){
                 n = sc.nextInt();
             }
             if(n == 999){

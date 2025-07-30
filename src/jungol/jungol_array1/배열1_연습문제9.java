@@ -10,6 +10,8 @@ public class 배열1_연습문제9 {
                     int temp = num_array[j];
                     num_array[j] = num_array[j+1];
                     num_array[j+1] = temp;
+                } else {
+                    continue;
                 }
             }
         }

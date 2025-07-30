@@ -9,11 +9,12 @@ public class 배열1_형성평가4 {
         int last_index = 0;
 
         for(int i = 0 ; i < num_array.length ; i++){
-            num_array[i] = sc.nextInt();
+            int num = sc.nextInt();
             if(num_array[i] == -1){
                 last_index = i - 1;
                 break;
             } else {
+                num_array[i] = num;
                 last_index = i;
             }
         }

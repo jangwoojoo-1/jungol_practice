@@ -10,10 +10,12 @@ public class 배열1_연습문제6 {
 
         for(int i = 0 ; i < num_array.length ; i++){
             num_array[i] = sc.nextInt();
-        }
-
-        for(int i = 0 ; i < num_array.length ; i++){
-            if(num_array[i] > maxValue){
+            if(num_array[i] <= 0){
+                while(num_array[i] <= 0){
+                    num_array[i] = sc.nextInt();
+                }
+            }
+            if(maxValue < num_array[i]){
                 maxValue = num_array[i];
             }
         }
