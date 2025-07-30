@@ -3,10 +3,11 @@ package jungol.jungol_array2;
 import java.util.Scanner;
 
 public class 배열2_연습문제5 {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[][] matrix1 = new int[3][3];
-        int[][] matrix2 = new int[3][3];
+        Integer[][] matrix1 = new Integer[3][3];
+        Integer[][] matrix2 = new Integer[3][3];
         
         for(int i = 0 ; i < matrix1.length ; i++){
             System.out.printf("첫 번째 배열 %d행 ", i+1);

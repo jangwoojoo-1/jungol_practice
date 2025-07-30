@@ -2,7 +2,7 @@ package jungol.jungol_array2;
 
 public class 배열2_자가진단4 {
     public static void main(String[] args) {
-        int[][] matrix = {
+        Integer[][] matrix = {
                 {5, 8, 10, 6, 4},
                 {11, 20, 1, 13, 2},
                 {7, 9, 14, 22, 3}

@@ -1,18 +1,17 @@
 package jungol.jungol_array1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class 배열1_연습문제7 {
-    public static void main(String[] args) {
-        int[] num_array = new int[10];
-        Scanner sc = new Scanner(System.in);
 
-        int num = 0;
-        int odd_min = 10001;
-        int even_max= -10000;
+public class 배열1_연습문제7 {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Integer[] num_array = new Integer[10];
 
         for(int i = 0 ; i < num_array.length ; i++){
-            num = sc.nextInt();
+            int num = sc.nextInt();
             while(num >= 10000 && num <= -10000){
                 System.out.println("4자리 이하의 정수를 입력하세요. ");
                 num = sc.nextInt();
@@ -20,16 +19,24 @@ public class 배열1_연습문제7 {
             num_array[i] = num;
         }
 
-        for (int i = 0 ; i < num_array.length ; i++){
-            if((num_array[i]%2 == 1 || num_array[i]%2 == -1) && num_array[i] < odd_min){
-                odd_min = num_array[i];
-            } else if (num_array[i]%2 == 0 && num_array[i] > even_max){
-                even_max = num_array[i];
-            } else {
-                continue;
-            }
+        Arrays.sort(num_array);
+
+        int maxIndex = 9;
+        int minIndex = 0;
+
+        int maxEven = num_array[maxIndex];
+        int minOdd = num_array[minIndex];
+
+        while(Math.abs(maxEven)%2 != 0){
+            maxIndex--;
+            maxEven = num_array[maxIndex];
         }
 
-        System.out.printf("%d %d", odd_min, even_max);
+        while (Math.abs(maxEven)%2 != 1){
+            minIndex++;
+            minOdd = num_array[minIndex];
+        }
+
+        System.out.printf("%d %d", minOdd, maxEven);
     }
 }

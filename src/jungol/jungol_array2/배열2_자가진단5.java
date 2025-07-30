@@ -3,10 +3,11 @@ package jungol.jungol_array2;
 import java.util.Scanner;
 
 public class 배열2_자가진단5 {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[][] matrix1 = new int[2][4];
-        int[][] matrix2 = new int[2][4];
+        Integer[][] matrix1 = new Integer[2][4];
+        Integer[][] matrix2 = new Integer[2][4];
 
         System.out.println("first array");
         for(int i = 0 ; i < matrix1.length ; i++){

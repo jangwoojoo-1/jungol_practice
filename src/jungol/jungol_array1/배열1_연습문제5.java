@@ -1,5 +1,6 @@
 package jungol.jungol_array1;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class 배열1_연습문제5 {
@@ -25,6 +26,10 @@ public class 배열1_연습문제5 {
                 System.out.println("잘못 입력하였습니다.\n");
                 continue;
             } else {
+
+                LocalDate localDate = LocalDate.of(year, month, 1);
+                System.out.printf("입력하신 달의 날의 수는 %d일입니다.\n", localDate.lengthOfMonth());
+
                 //평년 윤년 계산
                 if (year%400 == 0 && year%4 == 0){
                     n = 1;

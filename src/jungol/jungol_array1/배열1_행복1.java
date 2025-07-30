@@ -1,28 +1,18 @@
 package jungol.jungol_array1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class 배열1_행복1 {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int N = 2;
-        int[] student_scores = new int[N];
-        int min = 100;
-        int max = 0;
+        Integer[] student_scores = new Integer[N];
 
+        Arrays.sort(student_scores);
 
-        for (int i = 0 ; i < N ; i++){
-            student_scores[i] = sc.nextInt();
-            if (student_scores[i] < min){
-                min = student_scores[i];
-            } else if (student_scores[i] > max) {
-                max = student_scores[i];
-            } else {
-                continue;
-            }
-        }
-
-        System.out.println(max-min);
+        System.out.println(student_scores[1]-student_scores[0]);
 
     }
 }

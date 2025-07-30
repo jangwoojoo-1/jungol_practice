@@ -1,5 +1,7 @@
 package jungol.jungol_array1;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class 배열1_형성평가10 {
@@ -11,23 +13,13 @@ public class 배열1_형성평가10 {
             n = sc.nextInt();
         }
 
-        int[] scores = new int[n];
+        Integer[] scores = new Integer[n];
 
         for (int i = 0 ; i < n ; i++){
             scores[i] = sc.nextInt();
         }
 
-        for (int i = 0 ; i < n-1 ; i++){
-            for (int j = 0 ; j < n-1-i ; j++){
-                if (scores[j] < scores[j+1]){
-                    int temp = scores[j];
-                    scores[j] = scores[j+1];
-                    scores[j+1] = temp;
-                } else {
-                    continue;
-                }
-            }
-        }
+        Arrays.sort(scores, Collections.reverseOrder());
 
         for(int i = 0 ; i < n ; i++){
             System.out.println(scores[i]);

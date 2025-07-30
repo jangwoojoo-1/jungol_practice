@@ -3,9 +3,10 @@ package jungol.jungol_array2;
 import java.util.Scanner;
 
 public class 배열2_자가진단3 {
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[] num_arr = new int[100];
+        Integer[] num_arr = new Integer[100];
         num_arr[0] = 100;
 
         int n = sc.nextInt();

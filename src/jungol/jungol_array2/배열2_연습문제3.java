@@ -2,7 +2,7 @@ package jungol.jungol_array2;
 
 public class 배열2_연습문제3 {
     public static void main(String[] args) {
-        int[] fibonacci = new int[40];
+        Integer[] fibonacci = new Integer[40];
         fibonacci[0] = 1;
         fibonacci[1] = 1;
 
