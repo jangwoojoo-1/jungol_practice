@@ -1,13 +1,17 @@
-package jungol.jungol_string1;
+package jungol.jungol_string2;
 
 import java.util.Scanner;
 
-public class 문자열1_자가진단2 {
+public class 문자열2_자가진단2 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         String string = inputString();
-        System.out.printf("%s%s", string,string);
+        String[] strs = string.split(" ");
+
+        for (int i = 0; i < strs.length; i++) {
+            if(i%2 == 0) System.out.println(strs[i]);
+        }
     }
 
     public static String inputString(){
@@ -19,4 +23,5 @@ public class 문자열1_자가진단2 {
             return string;
         }
     }
+
 }
